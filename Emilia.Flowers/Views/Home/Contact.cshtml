@@ -1,0 +1,181 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<address>
+    Dublin Way, No. 18<br />                
+    <span class="glyphicon glyphicon-earphone"></span> <abbr title="Phone">Phone:</abbr>
+    0723.181.288
+</address>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">ieiflowers@yahoo.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">ieiflowers@yahoo.com</a>
+</address>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+body {
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    </style>
+</head>
+<body>
+
+    <h2>Responsive Contact Section</h2>
+    
+
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Swing by for buying a flower, or leave us a message:</p>
+        </div>
+        <div class="row">
+            
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <br />
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <br />
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="afghanistan">Afghanistan</option>
+                        <option value="albania">Albania</option>
+                        <option value="algeria">Algeria</option>
+                        <option value="andorra">Andorra</option>
+                        <option value="angola">Angola</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="armenia">Armenia</option>
+                        <option value="australia">Australia</option>
+                        <option value="austria">Austria</option>
+                        <option value="azerbaijan">Azerbaijan</option>
+                        <option value="belarus">Belarus</option>
+                        <option value="belgium">Belgium</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="bulgaria">Bulgaria</option>
+                        <option value="canada">Canada</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="croatia">Croatia</option>
+                        <option value="cuba">Cuba</option>
+                        <option value="cyprus">Cyprus</option>
+                        <option value="denmark">Denmark</option>
+                        <option value="estonia">Estonia</option>
+                        <option value="ethiopia">Ethiopia</option>
+                        <option value="finland">Finland</option>
+                        <option value="germany">Germany</option>
+                        <option value="greece">Greece</option>
+                        <option value="hungary">Hungary</option>
+                        <option value="iceland">Iceland</option>
+                        <option value="iran">Iran</option>
+                        <option value="iraq">Iraq</option>
+                        <option value="ireland">Ireland</option>
+                        <option value="israel">Israel</option>
+                        <option value="italy">Italy</option>
+                        <option value="japan">Japan</option>
+                        <option value="liberia">Liberia</option>
+                        <option value="lithuania">Lithuania</option>
+                        <option value="luxembourg">Luxembourg</option>
+                        <option value="macedonia">Macenodia</option>
+                        <option value="madagascar">Madagascar</option>
+                        <option value="moldova">Moldova</option>
+                        <option value="niger">Niger</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="norway">Norway</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="peru">Peru</option>
+                        <option value="Poland">Poland</option>
+                        <option value="romania">Romania</option>
+                        <option value="russia">Russia</option>
+                        <option value="saintlucia">Saint Lucia</option>
+                        <option value="serbia">Serbia</option>
+                        <option value="spain">Spain</option>
+                        <option value="sweden">Sweden</option>
+                        <option value="switzerland">Switzerland</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="unitedkingdom">United Kingdom</option>
+                        <option value="theunitedstates">The United States</option>
+                        <option value="zambia">Zambia</option>
+                        <option value="zimbabwe">Zimbabwe</option>
+                    </select>
+                    <br />
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <!--
+    To use this code on your website, get a free API key from Google.
+    Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+    -->
+
+</body>
+</html>

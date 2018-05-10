@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Emilia.Flowers.Models.Flower>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@foreach (var item in Model)
+{
+    <div class="flowerDiv">
+        <span>
+            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayFor(modelItem => item.Name)
+        </span>
+        <br/>
+        <span>
+            @Html.DisplayNameFor(model => model.Price)
+            @Html.DisplayFor(modelItem => item.Price)
+        </span>
+        <br/>
+        <span>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID })
+            @Html.ActionLink("Details", "Details", new { id = item.ID })
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+        </span>
+    </div>
+}
